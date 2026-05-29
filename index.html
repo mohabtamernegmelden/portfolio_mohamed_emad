@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Abdelrhman Emad | Computer Engineer & Mobile App Developer</title>
+    <meta name="description" content="Portfolio of Abdelrhman Emad Marouf, an accomplished Computer Engineer and Mobile Application Developer specializing in native Android, Kotlin, C++, and clean software architecture.">
+    <meta name="keywords" content="Abdelrhman Emad, Abdelrhman Emad Marouf, Mobile Application Developer, Android Developer, Computer Engineer, Helwan University, Kotlin, C++, Java, Jetpack Compose, Maadi, Egypt, Portfolio">
+    <meta name="author" content="Abdelrhman Emad Marouf">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abdelrhman Emad | Computer Engineer & Mobile App Developer">
+    <meta property="og:description" content="Portfolio of Abdelrhman Emad Marouf. Discover high-quality native Android applications, clean code architecture, and competitive programming achievements.">
+    <meta property="og:image" content="./profile.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Abdelrhman Emad | Computer Engineer & Mobile App Developer">
+    <meta property="twitter:description" content="Portfolio of Abdelrhman Emad Marouf. Discover high-quality native Android applications, clean code architecture, and competitive programming achievements.">
+    <meta property="twitter:image" content="./profile.jpg">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress-bar"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" id="nav-logo">
+                <span class="logo-accent">&lt;</span>Abdelrhman<span class="logo-accent">.dev /&gt;</span>
+            </a>
+            
+            <nav class="nav-links-wrapper" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link btn-nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Switcher Button -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light and dark theme">
+                    <!-- Moon Icon (Dark Mode active, click for Light) -->
+                    <svg class="icon moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                    <!-- Sun Icon (Light Mode active, click for Dark) -->
+                    <svg class="icon sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Hamburguer -->
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                    <span class="bar bar-3"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+            
+            <div class="container hero-container">
+                <div class="hero-content scroll-reveal">
+                    <div class="hero-greeting">
+                        <span class="badge-accent">Welcome to my space</span>
+                    </div>
+                    <h1 class="hero-name">Hi, I'm <span class="text-gradient">Abdelrhman Emad</span></h1>
+                    <h2 class="hero-title">
+                        I am a <span class="typewriter-text" id="typewriter" data-words='["Mobile App Developer", "Computer Engineer", "Competitive Programmer", "Problem Solver"]'></span><span class="typewriter-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Computer Engineering graduate from Helwan University (GPA 3.9/4.0). Specializing in native mobile application architectures (Android, Kotlin, Java) and high-performance system programming in C++. Focused on crafting secure, responsive, and beautifully engineered user experiences.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-socials">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub Profile">
+                            <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn Profile">
+                            <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="mailto:ae266909@gmail.com" class="social-icon-link" aria-label="Email Me">
+                            <svg class="social-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual scroll-reveal">
+                    <div class="image-frame-container">
+                        <div class="glowing-border"></div>
+                        <div class="image-wrapper">
+                            <img src="./profile.jpg" alt="Abdelrhman Emad" class="profile-photo" id="profile-img" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=500&h=500&q=80'">
+                        </div>
+                        <div class="floating-badge badge-1">
+                            <span class="badge-icon">🎓</span>
+                            <span class="badge-text">GPA 3.9 / 4.0</span>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <span class="badge-icon">🚀</span>
+                            <span class="badge-text">Android Dev</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-indicator-arrow" aria-label="Scroll to About Section">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Biography</span>
+                    <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text scroll-reveal">
+                        <h3>Passionate Computer Engineer & Native Mobile Architect</h3>
+                        <p>
+                            I am a highly motivated Computer Engineering graduate from Helwan University with an exceptional academic record (GPA 3.9/4.0). My background blends a comprehensive hardware-software computer engineering curriculum with rigorous practical experience in modern software architectures.
+                        </p>
+                        <p>
+                            Through my participation in the <strong>Digital Egypt Generation Initiative (DEGI)</strong>, I have specialized in building robust, highly secure, and optimized native mobile experiences using Kotlin, Java, and Jetpack Compose. I actively apply Material Design principles to ensure fluid user interfaces that perform flawlessly across multiple form factors.
+                        </p>
+                        <p>
+                            Beyond mobile, I have a deep passion for system-level programming and competitive programming. Solving complex problems using C++ has honed my ability to design efficient, elegant algorithms and write clean, maintainable, and test-driven code.
+                        </p>
+                    </div>
+                    
+                    <div class="about-cards-grid scroll-reveal">
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                </svg>
+                            </div>
+                            <h4>Education</h4>
+                            <p>Helwan University</p>
+                            <span class="card-detail">BS. Computer Engineering</span>
+                        </div>
+                        
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
+                            <h4>Academic Excellence</h4>
+                            <p>CGPA: 3.9 / 4.0</p>
+                            <span class="card-detail">Top-tier Performance</span>
+                        </div>
+                        
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <h4>Location</h4>
+                            <p>Cairo, Egypt</p>
+                            <span class="card-detail">Maadi-Degla</span>
+                        </div>
+                        
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h4>Key Specialization</h4>
+                            <p>Android SDK & C++</p>
+                            <span class="card-detail">Compose, Java, Architecture</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Proficiencies</span>
+                    <h2 class="section-title">Skills & <span class="text-gradient">Technologies</span></h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    
+                    <!-- Programming Languages -->
+                    <div class="skills-category scroll-reveal">
+                        <div class="category-header">
+                            <span class="category-num">01</span>
+                            <h3>Core Programming Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">C++ (Competitive Programming)</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="progress-line" data-percent="95%">
+                                    <span style="width: 0%;"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Kotlin (Android Development)</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="progress-line" data-percent="90%">
+                                    <span style="width: 0%;"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Java (Android SDK)</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="progress-line" data-percent="85%">
+                                    <span style="width: 0%;"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python (Problem Solving / Automation)</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="progress-line" data-percent="80%">
+                                    <span style="width: 0%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Development Frameworks -->
+                    <div class="skills-category scroll-reveal">
+                        <div class="category-header">
+                            <span class="category-num">02</span>
+                            <h3>Mobile App & Architecture</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Android Native Development & Jetpack Compose</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="progress-line" data-percent="92%">
+                                    <span style="width: 0%;"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Material Design Components (MDC / Material 3)</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="progress-line" data-percent="88%">
+                                    <span style="width: 0%;"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Software Design Patterns (MVVM, Clean Arch)</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="progress-line" data-percent="85%">
+                                    <span style="width: 0%;"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Android Security Essentials</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="progress-line" data-percent="80%">
+                                    <span style="width: 0%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Engineering Tools & QA -->
+                    <div class="skills-category scroll-reveal">
+                        <div class="category-header">
+                            <span class="category-num">03</span>
+                            <h3>Engineering, Testing & Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Version Control (Git & GitHub)</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="progress-line" data-percent="90%">
+                                    <span style="width: 0%;"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Functional Documentation & Unit Testing (Junit, Mockk)</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="progress-line" data-percent="85%">
+                                    <span style="width: 0%;"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">UI/UX Design Basics (Figma, Prototyping)</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="progress-line" data-percent="80%">
+                                    <span style="width: 0%;"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Prompt Engineering & AI Tools</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="progress-line" data-percent="85%">
+                                    <span style="width: 0%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Professional Path</span>
+                    <h2 class="section-title">My <span class="text-gradient">Experience</span></h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">July 2025 - Present</div>
+                        <div class="timeline-content glass-card">
+                            <span class="experience-badge">Internship</span>
+                            <h3>Software Engineer Intern</h3>
+                            <h4 class="company-name">Digital Egypt Generation Initiative (DEGI)</h4>
+                            <p class="timeline-desc">
+                                Enrolled in a prestigious training track geared towards elite engineering students. Designed and completed a comprehensive capstone mobile application, demonstrating proficiency in native Android paradigms.
+                            </p>
+                            <ul class="experience-bullets">
+                                <li>Mastered Kotlin fundamentals, reactive UI layout structures using Jetpack Compose, and Material Design Components.</li>
+                                <li>Implemented rigorous mobile safety strategies utilizing Android Security Essentials.</li>
+                                <li>Created thorough functional documentation and unit test suites to guarantee solid code health.</li>
+                                <li>Acquired key methodologies for integrating Prompt Engineering tools inside engineering workflows.</li>
+                            </ul>
+                            <div class="tags-container">
+                                <span class="tag">Kotlin</span>
+                                <span class="tag">Jetpack Compose</span>
+                                <span class="tag">Android Security</span>
+                                <span class="tag">Unit Testing</span>
+                                <span class="tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">October 2024 - June 2025</div>
+                        <div class="timeline-content glass-card">
+                            <span class="experience-badge">Software Engineer</span>
+                            <h3>Android & Java Developer</h3>
+                            <h4 class="company-name">D Solutions / Freelance</h4>
+                            <p class="timeline-desc">
+                                Specialized in Native Android App Development and backend logic implementations in Java. 
+                            </p>
+                            <ul class="experience-bullets">
+                                <li>Created user-friendly, responsive Android architectures, optimizing layouts for complex views and custom widgets.</li>
+                                <li>Engineered backend business logic in Java with custom API integrations and data-model parsing.</li>
+                                <li>Optimized resource utilization and memory allocations, minimizing battery drain and visual lags in native layouts.</li>
+                            </ul>
+                            <div class="tags-container">
+                                <span class="tag">Android SDK</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">XML Layouts</span>
+                                <span class="tag">REST API</span>
+                                <span class="tag">MVC/MVVM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Showcase</span>
+                    <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="projects-grid">
+                    
+                    <!-- Project Card 1: SmartFit Compose App -->
+                    <article class="project-card scroll-reveal">
+                        <div class="project-card-image">
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Code on GitHub">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Icon/Fallback visualization -->
+                            <div class="project-fallback-visual flex-center bg-gradient-1">
+                                <span class="project-emoji">📱</span>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <span class="project-meta">Android Capstone Project</span>
+                            <h3 class="project-title">SmartFit Android App</h3>
+                            <p class="project-text">
+                                A highly refined wellness application built entirely using Jetpack Compose and Kotlin. Employs MVVM architecture, Retrofit for weather and location-based sync, and Room DB for persistent local-first data caching. Features secure biometric login and clean testing layers.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Kotlin</span>
+                                <span class="tag">Jetpack Compose</span>
+                                <span class="tag">MVVM</span>
+                                <span class="tag">Room DB</span>
+                                <span class="tag">Unit Tests</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project Card 2: CP Visualizer -->
+                    <article class="project-card scroll-reveal">
+                        <div class="project-card-image">
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Code on GitHub">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Fallback visualization -->
+                            <div class="project-fallback-visual flex-center bg-gradient-2">
+                                <span class="project-emoji">📊</span>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <span class="project-meta">Algorithms & CP</span>
+                            <h3 class="project-title">CP Algorithm Visualizer</h3>
+                            <p class="project-text">
+                                An interactive visualization application mapping graph traversals (Dijkstra's, DFS, BFS), backtracking models, and recursion trees. Showcases high-efficiency sorting algorithms written in C++ with an intuitive responsive web wrapper built using Vanilla JavaScript.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">C++</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Algorithms</span>
+                                <span class="tag">Data Structures</span>
+                                <span class="tag">Vanilla JS</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project Card 3: IoT Smart Home Node -->
+                    <article class="project-card scroll-reveal">
+                        <div class="project-card-image">
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Code on GitHub">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Fallback visualization -->
+                            <div class="project-fallback-visual flex-center bg-gradient-3">
+                                <span class="project-emoji">🔌</span>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <span class="project-meta">Computer Engineering Capstone</span>
+                            <h3 class="project-title">IoT Smart Home Hub</h3>
+                            <p class="project-text">
+                                Hardware-software engineering project integrating an ESP32 microcontroller with a custom Android dashboard app via Bluetooth Low Energy (BLE). The microcontroller handles environmental sensor nodes (C++ firmware) and maps real-time data onto responsive Compose cards.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">C++ (Embedded)</span>
+                                <span class="tag">ESP32</span>
+                                <span class="tag">BLE</span>
+                                <span class="tag">Android SDK</span>
+                                <span class="tag">Compose</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section class="education-section" id="education">
+            <div class="container">
+                <div class="education-layout">
+                    
+                    <!-- Left: Education Column -->
+                    <div class="education-col scroll-reveal">
+                        <div class="section-header align-left">
+                            <span class="section-subtitle">Academic Foundations</span>
+                            <h2 class="section-title">My <span class="text-gradient">Education</span></h2>
+                            <div class="underline left-align"></div>
+                        </div>
+                        
+                        <div class="education-card-wrapper">
+                            <div class="edu-item glass-card">
+                                <div class="edu-icon">🎓</div>
+                                <div class="edu-details">
+                                    <span class="edu-year">2021 - 2025</span>
+                                    <h3>Bachelor of Science in Computer Engineering</h3>
+                                    <h4 class="school-name">Helwan University</h4>
+                                    <p class="edu-gpa"><strong>CGPA:</strong> 3.9 / 4.0 (Excellent with Honor Degree)</p>
+                                    <p class="edu-description">
+                                        Rigorous study focused on software architectures, databases, operating systems, hardware systems design, data communications, and algorithmic analysis. Completed multiple advanced hardware/software integrations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Certifications Column -->
+                    <div class="certifications-col scroll-reveal">
+                        <div class="section-header align-left">
+                            <span class="section-subtitle">Credentials</span>
+                            <h2 class="section-title">Certifications & <span class="text-gradient">Training</span></h2>
+                            <div class="underline left-align"></div>
+                        </div>
+                        
+                        <div class="certs-list">
+                            
+                            <div class="cert-item glass-card">
+                                <div class="cert-header">
+                                    <div class="cert-badge-logo">🛡️</div>
+                                    <div class="cert-title-info">
+                                        <h3>Android Architecture & Security Essentials</h3>
+                                        <span>Digital Egypt Generation Initiative</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="cert-item glass-card">
+                                <div class="cert-header">
+                                    <div class="cert-badge-logo">📱</div>
+                                    <div class="cert-title-info">
+                                        <h3>Kotlin Fundamentals & Jetpack Compose</h3>
+                                        <span>Digital Egypt Generation Initiative</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="cert-item glass-card">
+                                <div class="cert-header">
+                                    <div class="cert-badge-logo">📝</div>
+                                    <div class="cert-title-info">
+                                        <h3>Functional Documentation & Unit Testing</h3>
+                                        <span>Digital Egypt Generation Initiative</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="cert-item glass-card">
+                                <div class="cert-header">
+                                    <div class="cert-badge-logo">🤖</div>
+                                    <div class="cert-title-info">
+                                        <h3>UX/UI Design & Prompt Engineering</h3>
+                                        <span>Digital Egypt Generation Initiative</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact <span class="text-gradient">Me</span></h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    
+                    <!-- Left Side: Contact Info & Map/Links -->
+                    <div class="contact-info-wrapper scroll-reveal">
+                        <h3>Let's start a conversation</h3>
+                        <p class="contact-subtext">
+                            Whether you have an upcoming project, a remote position, a mobile development opportunity, or simply want to speak about system programming and algorithms, drop a message!
+                        </p>
+                        
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <span>Email Me</span>
+                                    <a href="mailto:ae266909@gmail.com" class="contact-link">ae266909@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <span>Call Me</span>
+                                    <a href="tel:01151489949" class="contact-link">+20 115 148 9949</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <span>Location</span>
+                                    <span class="contact-text-raw">Maadi-Degla, Cairo, Egypt</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side: Contact Form -->
+                    <div class="contact-form-wrapper glass-card scroll-reveal">
+                        <form id="contact-form" class="contact-form" action="#" method="POST" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Your Name</label>
+                                    <input type="text" id="form-name" name="name" required placeholder="John Doe">
+                                    <span class="error-msg" id="name-error">Please enter your name</span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-email">Your Email</label>
+                                    <input type="email" id="form-email" name="email" required placeholder="john@example.com">
+                                    <span class="error-msg" id="email-error">Please enter a valid email</span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-subject">Subject</label>
+                                    <input type="text" id="form-subject" name="subject" required placeholder="Opportunity / Discussion">
+                                    <span class="error-msg" id="subject-error">Please specify a subject</span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-message">Message</label>
+                                    <textarea id="form-message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                                    <span class="error-msg" id="message-error">Please enter a message</span>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                                <span>Send Message</span>
+                                <svg class="btn-icon submit-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                                </svg>
+                            </button>
+                        </form>
+                        
+                        <!-- Success Popup Modal Inside Contact -->
+                        <div class="form-success-toast" id="success-toast">
+                            <span class="toast-icon">✓</span>
+                            <div class="toast-text">
+                                <h4>Message Sent!</h4>
+                                <p>Thank you. Abdelrhman will get back to you shortly.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="nav-logo">
+                    <span class="logo-accent">&lt;</span>Abdelrhman<span class="logo-accent">.dev /&gt;</span>
+                </a>
+                <p>Computer Engineer & Native Mobile Architect based in Cairo, Egypt.</p>
+            </div>
+            
+            <nav class="footer-links" aria-label="Footer navigation">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="footer-socials">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a>
+                <a href="mailto:ae266909@gmail.com" aria-label="Email Me">Email</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Abdelrhman Emad Marouf. All rights reserved.</p>
+                <p>Made with passion & vanilla web technologies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
